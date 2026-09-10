@@ -1,0 +1,6 @@
+# Restrict access to lead files
+Require all denied
+<Files ~ "\.(json|csv|log)$">
+    Order allow,deny
+    Deny from all
+</Files>
